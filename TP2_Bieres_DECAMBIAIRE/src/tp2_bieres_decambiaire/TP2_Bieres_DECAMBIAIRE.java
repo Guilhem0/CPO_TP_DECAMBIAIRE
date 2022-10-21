@@ -16,9 +16,14 @@ public class TP2_Bieres_DECAMBIAIRE {
     public static void main(String[] args) {
         
         BouteilleBiere uneBiere = new BouteilleBiere("Cuvée des trolls",7.0 ,"Dubuisson") ;
-        uneBiere.lireEtiquette();
-        uneBiere.Décapsuler();
+        BouteilleBiere HK = new BouteilleBiere("HK",5.0 ,"Heineken") ;
+        BouteilleBiere Maximator = new BouteilleBiere("Maximator",11.6 ,"Amsterdam") ;
         
+        Maximator.Décapsuler();
+        
+        System.out.println(uneBiere);
+        System.out.println(HK);
+        System.out.println(Maximator);
     }
    
 }
