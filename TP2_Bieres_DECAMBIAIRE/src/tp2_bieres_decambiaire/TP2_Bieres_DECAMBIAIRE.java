@@ -14,8 +14,11 @@ public class TP2_Bieres_DECAMBIAIRE {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
         BouteilleBiere uneBiere = new BouteilleBiere("Cuvée des trolls",7.0 ,"Dubuisson") ;
         uneBiere.lireEtiquette();
+        uneBiere.Décapsuler();
+        
     }
    
 }
