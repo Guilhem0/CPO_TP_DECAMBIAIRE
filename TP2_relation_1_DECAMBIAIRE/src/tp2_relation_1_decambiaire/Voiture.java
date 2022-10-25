@@ -11,10 +11,18 @@ package tp2_relation_1_decambiaire;
 public class Voiture {
     String modele;
     String marque;
+    int puissanceCV;
+    
+    public Voiture(String unModele, String uneMarque, int unePuissance) {
+    modele = unModele;
+    marque = uneMarque;
+    puissanceCV = unePuissance;
+    }
+    
     @Override
     public String toString() {
     String chaine_a_retourner;
-    chaine_a_retourner = modele + " " +marque ;
+    chaine_a_retourner = modele + " " +marque + " " +puissanceCV ;
     return chaine_a_retourner ;
     }
 }
