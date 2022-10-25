@@ -39,7 +39,8 @@ public class TP2_Manipe_DECAMBIAIRE {
         for (int i=0;i<10;i++){ //pour chaque case du tableau, on cree une moussaka
             Tab[i]= new Moussaka(i); //je fais le choix de mettre un nombre de callorie égal au numero de case de la moussaka
         }
-        
+        System.out.println(Tab[1].nbCalories);
+        System.out.println(Tab[4].nbCalories); // j'affiche 2 cases du tableau pour vérifier: ca fonctionne
     }
 
 }
