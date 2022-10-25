@@ -24,12 +24,16 @@ public class Personne {
     
     public boolean ajouter_voiture( Voiture voiture_a_ajouter) {
     if (voiture_a_ajouter.propriétaire==null){
-        if (propriétaire.liste_voitures[3]!=null){
-            
-        }
+        for (int i=0; i<=3; i++){
+            if (liste_voitures[i].propriétaire==null){
+                liste_voitures[i].propriétaire=voiture_a_ajouter ;
+                return true;
+                break;
+            }
+        }            
     }
-    
-    }
+
+
 
 
     
