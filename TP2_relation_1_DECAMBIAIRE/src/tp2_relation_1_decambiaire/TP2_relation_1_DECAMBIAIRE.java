@@ -23,6 +23,13 @@ public class TP2_relation_1_DECAMBIAIRE {
         Personne reno = new Personne("Reno", "Raines");
         System.out.println("liste des voitures disponibles :\n"+ uneClio +"\n" + uneAutreClio + "\n" + une2008 + "\n" + uneMicra ) ;
 
+        bob.liste_voitures[0] = uneClio ;
+        bob.nbVoitures =+1 ;
+        uneClio.propriétaire = bob ;
+        
+        System.out.println("la premiere voiture de Bob est " +bob.liste_voitures[0] ) ;
+
+
     }
     
 }
