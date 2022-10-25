@@ -10,7 +10,7 @@ package tp2_manip_decambiaire;
  */
 public class Moussaka {
     int nbCalories;
-    public Moussaka(int cal_1){
-        nbCalories = cal_1;
-    }
+    public Moussaka (int cal_2) {
+    nbCalories = cal_2 ;
+}
 }
