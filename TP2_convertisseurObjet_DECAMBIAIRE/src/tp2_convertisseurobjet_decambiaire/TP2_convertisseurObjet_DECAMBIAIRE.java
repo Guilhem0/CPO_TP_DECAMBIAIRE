@@ -11,23 +11,21 @@ public class TP2_convertisseurObjet_DECAMBIAIRE {
         public static void main(String[] args) {
         Scanner sc;
         sc=new Scanner(System.in);       
-        double temp;//le nombre que saisi l'utilisateur
-        double ind;//le nombre de la comparaison qu'il souhaite
-        double valeur;//le résultat de la conversion
-        valeur=0;
+        double temp;// la température que saisi l'utilisateur
+        double ind;// le nombre de la comparaison qu'il souhaite
+        double valeur;// le résultat de la conversion
         
-        Convertisseur c = new Convertisseur();//création de l'objet convertisseur
+        Convertisseur c = new Convertisseur();
         System.out.println("Entrer la température");
-        temp=sc.nextDouble();//demande de saisi sur l'interface
+        temp=sc.nextDouble();// saisie sur l'interface
         System.out.println("Choisissez le numéro de la conversion");
         System.out.println("Index numéro de conversion : \n 1:CelciusVersKelvin \n 2:KelvinVersCelcius \n 3:FahrenheitVersCelcius \n 4:CelciusVersFahrenheit \n 5:FahrenheitVersKelvin \n 6:KelvinVersFahrenheit");
-        ind=sc.nextDouble();//saisi sur l'interface
+        ind=sc.nextDouble();// saisie sur l'interface
         
         
-        //si l'utilisateur choisi la conversion 1
         if (ind==1){
-            valeur=c.CelciusVersKelvin(temp);//on récupère le calcul de conversion avec le nombre saisi
-            System.out.println(valeur+"K");//affichage du résulat dans l'unité correspondante
+            valeur=c.CelciusVersKelvin(temp);
+            System.out.println(valeur+"K");
         }
         if (ind==2){
             valeur=c.KelvinVersCelcius(temp);
