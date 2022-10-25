@@ -11,10 +11,16 @@ package tp2_relation_1_decambiaire;
 public class Personne {
     String prenom;
     String nom;
+    int nbVoitures ;
+    Voiture [] liste_voitures ;
+
     
     public Personne(String unPrenom, String unNom) {
     prenom = unPrenom;
     nom = unNom;
+    nbVoitures=0;
+    liste_voitures = new Voiture [3] ;
+
     }
     
     @Override
@@ -23,4 +29,6 @@ public class Personne {
     chaine_a_retourner = prenom + " " +nom ;
     return chaine_a_retourner ;
     }
+    
+    
 }

@@ -27,7 +27,12 @@ public class TP2_relation_1_DECAMBIAIRE {
         bob.nbVoitures =+1 ;
         uneClio.propriétaire = bob ;
         
+        bob.liste_voitures[1] = une2008 ;
+        bob.nbVoitures =+1 ;
+        une2008.propriétaire = bob ;
+        
         System.out.println("la premiere voiture de Bob est " +bob.liste_voitures[0] ) ;
+        System.out.println("la deuxième voiture de Bob est " +bob.liste_voitures[1] ) ;
 
 
     }
