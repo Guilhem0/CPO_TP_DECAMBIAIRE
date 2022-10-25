@@ -16,7 +16,7 @@ public class Convertisseur {
     
     public static double CelciusVersKelvin (double tCelcius) {
         tCelcius=tCelcius+273.15;
-        //Convertisseur.nbConversions=nbConversions+1;
+        //nbConversions=+1;
         return tCelcius;
     }
     public static double KelvinVersCelcius(double tKelvin) {
