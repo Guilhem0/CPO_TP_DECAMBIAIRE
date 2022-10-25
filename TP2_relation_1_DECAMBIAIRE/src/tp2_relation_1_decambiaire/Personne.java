@@ -20,8 +20,18 @@ public class Personne {
     nom = unNom;
     nbVoitures=0;
     liste_voitures = new Voiture [3] ;
-
     }
+    
+    public boolean ajouter_voiture( Voiture voiture_a_ajouter) {
+    if (voiture_a_ajouter.propriétaire==null){
+        if (propriétaire.liste_voitures[3]!=null){
+            
+        }
+    }
+    
+    }
+
+
     
     @Override
     public String toString() {
