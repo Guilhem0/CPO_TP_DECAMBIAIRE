@@ -10,39 +10,49 @@ package tp2_convertisseurobjet_decambiaire;
  */
 public class Convertisseur {
     int nbConversions;
-    public Convertisseur () {
-    nbConversions = 0 ;
+    public  void Convertisseur(){//création du constructeur
+    nbConversions = 0 ;//initialisation du nb de conversions
+}
+    //pour chaque conversion la variable est un double
+    public double CelciusVersKelvin(double a){
+        a=a+273;//calcul de la conversion
+        nbConversions+=1;
+        return a;//retourner le résultat de la conversion
     }
     
-    public static double CelciusVersKelvin (double tCelcius) {
-        tCelcius=tCelcius+273.15;
-        //nbConversions=+1;
-        return tCelcius;
+//même principe pour les suivants
+    public double KelvinVersCelcius(double b){
+        b=b-273;
+        nbConversions+=1;
+        return b;
     }
-    public static double KelvinVersCelcius(double tKelvin) {
-        tKelvin=tKelvin-273.15;
-        return tKelvin;
+    
+    public double FahrenheitVersCelcius(double c){
+        c=(c-32)/1.8;
+        nbConversions+=1;
+        return c;
     }
-    public static double FarenheitVersCelcius(double tFarenheit) {
-        tFarenheit=(tFarenheit-32)/1.8;
-        return tFarenheit;
+    
+    public double CelciusVersFahrenheit (double d){
+        d=(d*1.8)+32;
+        nbConversions+=1;
+        return d;
     }
-    public static double CelciusVersFarenheit(double tCelcius) {
-        tCelcius=(tCelcius*1.8)+32;
-        return tCelcius;
+    
+    public double FahrenheitVersKelvin (double e){
+        e=(e+459.67)*(5/9);
+        nbConversions+=1;
+        return e;
     }
-    public static double KelvinVersFarenheit(double tKelvin) {
-        tKelvin=(tKelvin-273.15)*(9/5)+32;
-        return tKelvin;
-    }
-    public static double FarenheitVersKelvin(double tFarenheit) {
-        tFarenheit=(tFarenheit-32)*(5/9)+273.15;
-        return tFarenheit;
+    
+    public double KelvinVersFahrenheit (double f){
+        f=(f*(9/5))-459.67;
+        nbConversions+=1;
+        return f;
     }
     
     @Override
     public String toString () {
-    return "nb de conversions "+ nbConversions;
-    }
-
+    return "nb de conversions"+ nbConversions;
+}
 }

@@ -5,50 +5,53 @@
 package tp2_convertisseurobjet_decambiaire;
 
 import java.util.Scanner;
-import static tp2_convertisseurobjet_decambiaire.Convertisseur.CelciusVersFarenheit;
-import static tp2_convertisseurobjet_decambiaire.Convertisseur.CelciusVersKelvin;
-import static tp2_convertisseurobjet_decambiaire.Convertisseur.FarenheitVersCelcius;
-import static tp2_convertisseurobjet_decambiaire.Convertisseur.FarenheitVersKelvin;
-import static tp2_convertisseurobjet_decambiaire.Convertisseur.KelvinVersCelcius;
-import static tp2_convertisseurobjet_decambiaire.Convertisseur.KelvinVersFarenheit;
 
 public class TP2_convertisseurObjet_DECAMBIAIRE {
 
-    public static void main(String[] args) {
-        
-        double temp;
-        double ind;
+        public static void main(String[] args) {
         Scanner sc;
-        sc = new Scanner(System.in);
-        System.out.println("Bonjour, saisissez une valeur :");
-        temp = sc.nextDouble();
-        System.out.println("Saisissez la conversion que vous souhaitez effectuer :\n1) De Celcius vers Kelvin\n2) De Kelvin vers Celcius\n...\n6) De Farenheit vers Kelvin");
-        ind = sc.nextDouble();
+        sc=new Scanner(System.in);       
+        double temp;//le nombre que saisi l'utilisateur
+        double ind;//le nombre de la comparaison qu'il souhaite
+        double valeur;//le résultat de la conversion
+        valeur=0;
         
+        Convertisseur c = new Convertisseur();//création de l'objet convertisseur
+        System.out.println("Entrer la température");
+        temp=sc.nextDouble();//demande de saisi sur l'interface
+        System.out.println("Choisissez le numéro de la conversion");
+        System.out.println("Index numéro de conversion : \n 1:CelciusVersKelvin \n 2:KelvinVersCelcius \n 3:FahrenheitVersCelcius \n 4:CelciusVersFahrenheit \n 5:FahrenheitVersKelvin \n 6:KelvinVersFahrenheit");
+        ind=sc.nextDouble();//saisi sur l'interface
+        
+        
+        //si l'utilisateur choisi la conversion 1
         if (ind==1){
-            temp=CelciusVersKelvin(temp);
-            System.out.println(temp);
+            valeur=c.CelciusVersKelvin(temp);//on récupère le calcul de conversion avec le nombre saisi
+            System.out.println(valeur+"K");//affichage du résulat dans l'unité correspondante
         }
         if (ind==2){
-            temp=KelvinVersCelcius(temp);
-            System.out.println(temp);
+            valeur=c.KelvinVersCelcius(temp);
+            System.out.println(valeur+"C");
         }
         if (ind==3){
-            temp=FarenheitVersCelcius(temp);
-            System.out.println(temp);
+            valeur=c.FahrenheitVersCelcius(temp);
+            System.out.println(valeur+"C");
         }
         if (ind==4){
-            temp=CelciusVersFarenheit(temp);
-            System.out.println(temp);
+            valeur=c.CelciusVersFahrenheit(temp);
+            System.out.println(valeur+"F");
         }
+        
         if (ind==5){
-            temp=KelvinVersFarenheit(temp);
-            System.out.println(temp);
+            valeur=c.FahrenheitVersKelvin(temp);
+            System.out.println(valeur+"K");
         }
         if (ind==6){
-            temp=FarenheitVersKelvin(temp);
-            System.out.println(temp);
+            valeur=c.KelvinVersFahrenheit(temp);
+            System.out.println(valeur+"F");
         } 
-        //Convertisseur obj1 = new Convertisseur
+  
+        
     }
+    
 }
