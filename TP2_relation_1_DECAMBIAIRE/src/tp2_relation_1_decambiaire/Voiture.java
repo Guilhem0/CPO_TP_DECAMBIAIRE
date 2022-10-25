@@ -16,5 +16,5 @@ public class Voiture {
     String chaine_a_retourner;
     chaine_a_retourner = modele + " " +marque ;
     return chaine_a_retourner ;
-
+    }
 }
