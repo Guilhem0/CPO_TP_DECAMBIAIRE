@@ -44,11 +44,14 @@ public class TP2_relation_1_DECAMBIAIRE {
         System.out.println(reno.ajouter_voiture(uneAutreClio)); //l'ajout fonctionne
 
         System.out.println("uneClio est possédée par " +uneClio.propriétaire ) ;
-        System.out.println("uneAutreClio est possédée par " +uneAutreClio.propriétaire ) ;
-        
+        System.out.println("uneAutreClio est possédée par " +uneAutreClio.propriétaire ) ;       
         System.out.println("la Micra est possédée par " +uneMicra.propriétaire ) ;
-        System.out.println("la 2008 est possédée par " +une2008.propriétaire ) ;
+        System.out.println("la 2008 est possédée par " +une2008.propriétaire ) ;   //Vérification des propriétaires
 
+        System.out.println("La première voiture de Bob est " +bob.liste_voitures[0] ) ;
+        System.out.println("La deuxième voiture de Bob est " +bob.liste_voitures[1] ) ;       
+        System.out.println("La première voiture de Reno est " +reno.liste_voitures[0] ) ;
+        System.out.println("La deuxième voiture de Reno est " +reno.liste_voitures[1] ) ;   //Vérification de la liste de voitures
     }
     
 }
