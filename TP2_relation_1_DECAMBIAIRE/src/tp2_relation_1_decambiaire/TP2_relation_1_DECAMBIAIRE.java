@@ -31,20 +31,23 @@ public class TP2_relation_1_DECAMBIAIRE {
         bob.nbVoitures =+1 ;
         une2008.propriétaire = bob ;
         
-        reno.liste_voitures[0] = uneAutreClio ;
-        reno.nbVoitures =+1 ;
-        uneAutreClio.propriétaire = reno ;
+        //reno.liste_voitures[0] = uneAutreClio ;
+        //reno.nbVoitures =+1 ;                        Je passe le code en commentaire pour la question 10
+        //uneAutreClio.propriétaire = reno ;
         
-        reno.liste_voitures[1] = uneMicra ;
+        reno.liste_voitures[0] = uneMicra ;
         reno.nbVoitures =+1 ;
         uneMicra.propriétaire = reno ;
-        
-        System.out.println("la premiere voiture de Bob est " +bob.liste_voitures[0] ) ;
-        System.out.println("la deuxieme voiture de Bob est " +bob.liste_voitures[1] ) ;
-        
-        System.out.println("la premiere voiture de Reno est " +reno.liste_voitures[0] ) ;
-        System.out.println("la deuxieme voiture de Reno est " +reno.liste_voitures[1] ) ;
+       
 
+        System.out.println(bob.ajouter_voiture(une2008)); //on ajoute la 2008 a Bob et ça ne fonctionne pas, il l'a déjà
+        System.out.println(reno.ajouter_voiture(uneAutreClio)); //l'ajout fonctionne
+
+        System.out.println("uneClio est possédée par " +uneClio.propriétaire ) ;
+        System.out.println("uneAutreClio est possédée par " +uneAutreClio.propriétaire ) ;
+        
+        System.out.println("la Micra est possédée par " +uneMicra.propriétaire ) ;
+        System.out.println("la 2008 est possédée par " +une2008.propriétaire ) ;
 
     }
     
