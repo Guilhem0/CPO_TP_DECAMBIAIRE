@@ -13,9 +13,9 @@ public class Arme {
     int nivAttaque;
     
     
-    public Arme (String unNom, int unnivAttaque) {
+    public Arme (String unNom, int unNivAttaque) {
     nom = unNom;
-    nivAttaque = unnivAttaque;
+    nivAttaque = unNivAttaque;
     }
     
     public void Stats() {

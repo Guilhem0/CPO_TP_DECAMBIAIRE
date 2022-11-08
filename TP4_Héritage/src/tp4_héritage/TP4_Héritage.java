@@ -17,6 +17,9 @@ public class TP4_Héritage {
         Arme katana = new Arme("katana",25);
         katana.Stats();
         System.out.println(katana);
+        
+        Epée sword = new Epée("sword",10,10);
+        System.out.println(sword);
     }
     
     
