@@ -19,4 +19,9 @@ public class Baton extends Arme {
             age=0;
         }
     }
+    
+    @Override  //on cree un toString specialise pour les epees
+    public String toString() {
+        return "Baton{Nom = "+nom+ ", Niveau = "+nivAttaque+", age = " + age + '}';
+    }
 }

@@ -19,4 +19,10 @@ public class Epée extends Arme {
             finesse=0;
         }
     }
+    
+    @Override  //on cree un toString specialise pour les epees
+    public String toString() {
+        return "Epee{Nom = "+nom+ ", Niveau = "+nivAttaque+", finesse = " + finesse + '}';
+    }
+
 }
