@@ -2,27 +2,27 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package tp4_héritage;
+package Armes;
+
 
 /**
  *
  * @author guilh
  */
-public class Epée extends Arme {
-    int finesse;
+public class Baton extends Arme {
+    int age;
     
-    public Epée(String n, int unNivAttaque, int uneFinesse){
-        super(n,unNivAttaque);
-        if(uneFinesse>0){
-            finesse=uneFinesse;
+    public Baton(String unNom, int unNivAttaque, int unAge){
+        super(unNom,unNivAttaque);
+        if(unAge>0){
+            age=unAge;
         }else{
-            finesse=0;
+            age=0;
         }
     }
     
     @Override  //on cree un toString specialise pour les epees
     public String toString() {
-        return "Epee{Nom = "+nom+ ", Niveau = "+nivAttaque+", finesse = " + finesse + '}';
+        return "Baton{Nom = "+nom+ ", Niveau = "+nivAttaque+", age = " + age + '}';
     }
-
 }

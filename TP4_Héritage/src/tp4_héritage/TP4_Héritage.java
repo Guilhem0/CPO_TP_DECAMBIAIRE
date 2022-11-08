@@ -4,6 +4,10 @@
  */
 package tp4_héritage;
 
+import Armes.Epée;
+import Armes.Baton;
+import Armes.*;
+
 import java.util.ArrayList;
 
 /**
