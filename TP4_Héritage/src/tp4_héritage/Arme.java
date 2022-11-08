@@ -9,5 +9,24 @@ package tp4_héritage;
  * @author guilh
  */
 public class Arme {
+    String nom;
+    int nivAttaque;
+    
+    
+    public Arme (String unNom, int unnivAttaque) {
+    nom = unNom;
+    nivAttaque = unnivAttaque;
+    }
+    
+    public void Stats() {
+    System.out.println(nivAttaque) ;   
+    }
+    
+    @Override
+    public String toString() {
+    String chaine_a_retourner;
+    chaine_a_retourner = "Nom de l'arme : "+nom+"\nNiveau d'attaque de l'arme : "+nivAttaque;
+    return chaine_a_retourner ;
+    }
     
 }
