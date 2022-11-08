@@ -14,12 +14,14 @@ public class TP4_Héritage {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Arme katana = new Arme("katana",25);
-        katana.Stats();
-        System.out.println(katana);
         
-        Epée sword = new Epée("sword",10,10);
-        System.out.println(sword);
+        Epée Excalibur = new Epée("Excalibur",7,5);
+        Epée Durandal = new Epée("Durandal",4,7);
+        
+        Baton Chêne = new Baton("Chêne",4,5);
+        Baton Charme = new Baton("Charme",5,6);
+
+        System.out.println(Excalibur);
     }
     
     
