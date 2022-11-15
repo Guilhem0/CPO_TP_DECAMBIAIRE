@@ -66,8 +66,8 @@ public class TP4_Héritage {
             System.out.println(listePersonnage.get(i));
         }
         
-        
-        ArrayList <Arme> tabArme = new ArrayList<Arme>();
+        Magicien  = new Magicien("Garcimore",44,false);       
+        Guerrier  = new Guerrier("Conan",78,false);
     }
     
     
