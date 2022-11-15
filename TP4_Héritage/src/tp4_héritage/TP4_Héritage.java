@@ -26,6 +26,9 @@ public class TP4_Héritage {
         
         Baton Chêne = new Baton("Chêne",4,5);
         Baton Charme = new Baton("Charme",5,6);
+        
+        Excalibur.setNivAttaque(-5);
+        
 
         ArrayList <Arme> listeArme = new ArrayList<Arme>();
         listeArme.add(Excalibur);
