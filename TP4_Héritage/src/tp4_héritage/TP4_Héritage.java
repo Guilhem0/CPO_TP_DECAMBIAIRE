@@ -66,9 +66,22 @@ public class TP4_Héritage {
             System.out.println(listePersonnage.get(i));
         }
         
-        Magicien  = new Magicien("Garcimore",44,false);       
-        Guerrier  = new Guerrier("Conan",78,false);
+        Magicien Axel = new Magicien("Axel Badou",50,false);       
+        Guerrier Clement= new Guerrier("Clement Chuzel",1,false);
+        
+        Baton Marabout = new Baton("Marabout",5,1);  
+        Baton Trotinette = new Baton("Trotinette",2,3); 
+        Baton Poutre = new Baton("Poutre",10,19);
+        Epée BrasDroit = new Epée("BrasDroit",1,100);
+        Epée BrasGauche = new Epée("BrasGauche",1,100);
+        
+        Axel.setArmeEnMain("Trotinette");
+        Clement.setArmeEnMain("BrasDroit");
+        
+        
+        
     }
+    
     
     
 }
