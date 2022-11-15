@@ -3,6 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Personnage;
+import Armes.Arme;
+import java.util.*;
 
 /**
  *
@@ -24,5 +26,7 @@ public class Personnage {
     return chaine_a_retourner ;
     
     }
+    
+    ArrayList <Arme> tabArme = new ArrayList<Arme>();
     
 }

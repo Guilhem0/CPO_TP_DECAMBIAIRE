@@ -7,6 +7,9 @@ package tp4_héritage;
 import Armes.Epée;
 import Armes.Baton;
 import Armes.*;
+import Personnage.*;
+
+
 
 import java.util.ArrayList;
 
@@ -22,23 +25,49 @@ public class TP4_Héritage {
     public static void main(String[] args) {
         
         Epée Excalibur = new Epée("Excalibur",7,5);
-        Epée Durandal = new Epée("Durandal",4,7);
-        
+        Epée Durandal = new Epée("Durandal",4,7);   
         Baton Chêne = new Baton("Chêne",4,5);
         Baton Charme = new Baton("Charme",5,6);
         
-        Excalibur.setNivAttaque(-5);
+        //Excalibur.setNivAttaque(-5);
+        //Durandal.setFinesse(150);
+        //Chêne.setNivAttaque(200);
+        //Charme.setAge(-10);
         
-
+        Magicien Gandalf = new Magicien("Gandalf",65,true);
+        Magicien Garcimore = new Magicien("Garcimore",44,false);       
+        Guerrier Conan = new Guerrier("Conan",78,false);
+        Guerrier Lannister = new Guerrier("Lannister",45,true);
+        
+               
         ArrayList <Arme> listeArme = new ArrayList<Arme>();
         listeArme.add(Excalibur);
         listeArme.add(Durandal);
         listeArme.add(Chêne);
-        listeArme.add(Charme);
-        
+        listeArme.add(Charme);        
         for (int i=0;i<listeArme.size();i++){
             System.out.println(listeArme.get(i));
         }
+        
+        ArrayList <Personnage> listePersonnage = new ArrayList<Personnage>();
+        listePersonnage.add(Gandalf);
+        Gandalf.setConfirme(true);
+        
+        listePersonnage.add(Garcimore);
+        Garcimore.setConfirme(false);
+        
+        listePersonnage.add(Conan);
+        Conan.setCheval(false);
+        
+        listePersonnage.add(Lannister);
+        Lannister.setCheval(true);
+        
+        for (int i=0;i<listePersonnage.size();i++){
+            System.out.println(listePersonnage.get(i));
+        }
+        
+        
+        ArrayList <Arme> tabArme = new ArrayList<Arme>();
     }
     
     
