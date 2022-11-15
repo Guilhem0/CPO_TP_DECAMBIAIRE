@@ -74,6 +74,7 @@ public class TP4_Héritage {
         Baton Poutre = new Baton("Poutre",10,19);
         Epée BrasDroit = new Epée("BrasDroit",1,100);
         Epée BrasGauche = new Epée("BrasGauche",1,100);
+        Epée katana = new Epée("katana",15,50);
         
         Axel.setArmeEnMain("Trotinette");
         Clement.setArmeEnMain("BrasDroit");
